@@ -58,3 +58,7 @@ npm run mcp
 ## Licencia
 
 MIT
+
+## Author
+
+Basically took this from [primevue-mcp](https://github.com/enolgr/primevue-mcp) repository but made it work. It may have been skill issue on my side but I couldn't get it to work until I made these changes.
