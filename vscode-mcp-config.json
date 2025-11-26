@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "PrimeVueMCP": {
+      "type": "stdio",
+      "command": "/Users/williamp/Development/mcp/prime-vue-mcp/dist/src/mcp-server.js",
+      "args": []
+    }
+  }
+}
