@@ -73,9 +73,6 @@ function getDataset() {
     try {
       const file = fs.readFileSync(DATA_PATH, "utf8");
       dataset = JSON.parse(file);
-      console.log(
-        `✅ Loaded ${Object.keys(dataset).length} components from combined.json`
-      );
     } catch (err) {
       console.error("❌ Failed to load combined.json:", err);
       throw err;
@@ -390,9 +387,4 @@ app.get(
 );
 
 // Start server
-app.listen(PORT, () => {
-  console.log(`🌐 PrimeVue MCP running on http://localhost:${PORT}`);
-  console.log(`📚 API Documentation: http://localhost:${PORT}/`);
-  console.log(`🔍 Search: http://localhost:${PORT}/mcp/search?q=button`);
-  console.log(`⚡ Dataset will be loaded on first request (lazy loading)`);
-});
+app.listen(PORT, () => {});

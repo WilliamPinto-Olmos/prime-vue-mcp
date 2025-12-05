@@ -8,6 +8,5 @@ if (fs.existsSync(file)) {
   if (!content.startsWith(shebang)) {
     fs.writeFileSync(file, shebang + content, "utf8");
     fs.chmodSync(file, 0o755);
-    console.log("Shebang añadido a dist/src/mcp-server.js");
   }
 }

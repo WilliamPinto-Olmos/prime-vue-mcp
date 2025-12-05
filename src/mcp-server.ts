@@ -26,7 +26,6 @@ function getDataset() {
     try {
       const file = fs.readFileSync(DATA_PATH, "utf8");
       dataset = JSON.parse(file);
-      console.log(`✅ Loaded ${Object.keys(dataset).length} components`);
     } catch (err) {
       console.error("❌ Failed to load dataset:", err);
       throw err;
@@ -295,7 +294,6 @@ server.setRequestHandler(
 async function main() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
-  console.log("🚀 PrimeVue MCP server running");
 }
 
 main().catch(console.error);
